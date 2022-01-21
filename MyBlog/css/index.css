@@ -1,0 +1,85 @@
+/* Load dependent CSS from CSS */
+@import "./CssInternal.css";
+
+#selectorID {
+    color:darkgoldenrod
+}
+
+#CloseBtn{
+     font-size: 30px;
+}
+
+
+  <style>
+  .container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 100px 1fr 50px ;
+      grid-template-areas: 
+      "hd hd "
+      "main main "
+      "ft ft ";
+      border: 2px solid yellow;
+    
+  }
+  @media(min-width: 901px) {
+  .container {
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 100px 1fr 50px;
+      grid-template-areas: 
+      "hd hd hd "
+      "main main main "
+      "ft ft ft ";
+      border: 5px solid rgb(216, 72, 72);
+  }
+  }
+
+  .box{
+    border: 1px solid red;
+    background: #F8FA9D;
+    gap: 25px;
+    }
+
+    .photoBox {
+      width: 250px;
+      height: 150px;
+      border: 2px solid violet;
+      background: #F8FA9D;
+    }
+    #one{
+      background-image:url('../assets/images/HLV.jpg');
+      background-size: contain;
+    }
+    #two{
+      background-image:url('../assets/images/RetirementPlan.jpg');
+      background-size: contain;
+    }
+    #three{
+      background-image:url('../assets/images/ChildEducation.jpg');
+      background-size: contain;
+    }
+    #four{
+      background-image:url('../assets/images/PassiveIncome.jpg');
+      background-size: contain;
+    }
+    #just-line-break {
+      white-space: pre-line;
+    }
+    #line-break-and-tab {
+      white-space: pre-wrap;
+    }
+
+/* Assign grid area below */
+  .header{
+    grid-area: hd;
+  }
+  .footer{
+    grid-area: ft;
+  }
+  .content{
+    grid-area: main;
+  }
