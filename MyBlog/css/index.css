@@ -1,5 +1,4 @@
 /* Load dependent CSS from CSS */
-@import "./CssInternal.css";
 
 #selectorID {
     color:darkgoldenrod
@@ -63,7 +62,7 @@
       background-size: contain;
     }
     #four{
-      background-image:url('../assets/images/PassiveIncome.jpg');
+      background-image:url('../assets/images/PassiveIncome.png');
       background-size: contain;
     }
     #just-line-break {
